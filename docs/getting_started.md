@@ -54,3 +54,25 @@ Before starting development on the AI OS Kernel, ensure the following tools are 
    ```bash
    git clone https://github.com/tkarcheski/ai-os-kernel.git
    cd ai-os-kernel
+   ```
+
+2. **Run the setup script** to ensure your environment is configured correctly:
+   ```bash
+   ./check_dev.sh
+   ```
+
+3. **Pre-commit Hooks**: The pre-commit hook is automatically set up on clone. Run it manually to ensure your code passes the checks:
+   ```bash
+   pre-commit run --all-files
+   ```
+
+4. **Build the project**:
+   ```bash
+   cargo build
+   ```
+
+5. **Run tests**:
+   ```bash
+   cargo test
+   ```
+```
